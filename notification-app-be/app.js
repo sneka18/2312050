@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const { loggingMiddleware } = require("./utils/middleware");
-const { getNotifications, getPriorityNotifications } = require("./controller/notificationController");
-const { createLog } = require("./controller/logController");
+const notificationRoutes = require("./routes/notificationRoutes");
+const logRoutes = require("./routes/logRoutes");
 
 const app = express();
 
@@ -14,9 +14,9 @@ app.use(cors({
 app.use(express.json());
 app.use(loggingMiddleware);
 
-app.get("/api/notifications", getNotifications);
-app.get("/api/notifications/priority", getPriorityNotifications);
-app.post("/api/logs", createLog);
+// Mount routers
+app.use("/api/notifications", notificationRoutes);
+app.use("/api/logs", logRoutes);
 
 app.use((err, req, res, next) => {
   const { Log } = require("./utils/logger");
