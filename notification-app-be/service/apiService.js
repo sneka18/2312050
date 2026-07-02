@@ -50,7 +50,13 @@ async function fetchExternalNotifications(params = {}) {
     if (limit) queryParams.limit = limit;
     if (notification_type) queryParams.notification_type = notification_type;
 
-    const response = await axios.get(externalUrl, { params: queryParams, timeout: 2000 });
+    const response = await axios.get(externalUrl, { 
+      params: queryParams, 
+      timeout: 2000,
+      headers: {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiIyMzEyMDUwQG5lYy5lZHUuaW4iLCJleHAiOjE3ODI5NzYxMTUsImlhdCI6MTc4Mjk3NTIxNSwiaXNzIjoiQWZmb3JkIE1lZGljYWwgVGVjaG5vbG9naWVzIFByaXZhdGUgTGltaXRlZCIsImp0aSI6ImZlNGFmZDhjLTMyMWItNGJiNy04MmM0LTEzZGVlMDJhZDE5YyIsImxvY2FsZSI6ImVuLUlOIiwibmFtZSI6InNuZWthIHIiLCJzdWIiOiI2NTgzNmY0YS1lYmQwLTQwODUtYWVhNC1lM2NiMDYzZTI2MDYifSwiZW1haWwiOiIyMzEyMDUwQG5lYy5lZHUuaW4iLCJuYW1lIjoic25la2EgciIsInJvbGxObyI6IjIzMTIwNTAiLCJhY2Nlc3NDb2RlIjoiRVJ6VXl4IiwiY2xpZW50SUQiOiI2NTgzNmY0YS1lYmQwLTQwODUtYWVhNC1lM2NiMDYzZTI2MDYiLCJjbGllbnRTZWNyZXQiOiJzVlh1dnJrY0dweFVURVpXIn0.hnk2IqMWhyqpAFHjcszuR1MgciRrbdaI3GcH633Jq28"
+      }
+    });
     return response.data;
   } catch (error) {
     Log(

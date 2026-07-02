@@ -207,3 +207,6 @@
     at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
     at async getPriorityNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:24:18)
 [2026-07-02T06:38:14.390Z] [INFO] [middleware] - Response: GET /api/notifications/priority?limit=5 | Status: 200 | Duration: 2030ms | Stack: backend
+[2026-07-02T06:55:41.160Z] [INFO] [backend.server] - Server is running and listening on port 5000
+[2026-07-02T07:02:59.986Z] [INFO] [handler] - Testing the logging middleware | Stack: backend
+[2026-07-02T07:03:13.731Z] [INFO] [backend.server] - Server is running and listening on port 5000
