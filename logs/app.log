@@ -1,2 +1,209 @@
 [2026-07-02T06:23:18.072Z] [INFO] [backend.server] - Server is running and listening on port 5000
 [2026-07-02T06:33:24.824Z] [INFO] [backend.server] - Server is running and listening on port 5000
+[2026-07-02T06:35:50.807Z] [INFO] [backend.server] - Server is running and listening on port 5000
+[2026-07-02T06:37:00.724Z] [INFO] [backend.server] - Server is running and listening on port 5000
+[2026-07-02T06:37:26.715Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:26.719Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=10, type=All | Stack: N/A
+[2026-07-02T06:37:26.736Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:26.740Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=10, type=All | Stack: N/A
+[2026-07-02T06:37:26.727Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 12ms | Stack: backend
+[2026-07-02T06:37:26.744Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 8ms | Stack: backend
+[2026-07-02T06:37:26.797Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=10 from ::1 | Stack: backend
+[2026-07-02T06:37:26.801Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=10, type=undefined
+[2026-07-02T06:37:28.851Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:28.858Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=10 | Status: 200 | Duration: 2061ms | Stack: backend
+[2026-07-02T06:37:28.864Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=10, type=undefined
+[2026-07-02T06:37:28.863Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=10 from ::1 | Stack: backend
+[2026-07-02T06:37:30.886Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:30.893Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=10 | Status: 304 | Duration: 2030ms | Stack: backend
+[2026-07-02T06:37:35.741Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:35.743Z] [INFO] [frontend.frontend.page] - Filter changed to Placement | Stack: N/A
+[2026-07-02T06:37:35.746Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 5ms | Stack: backend
+[2026-07-02T06:37:35.810Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:35.813Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=10, type=Placement | Stack: N/A
+[2026-07-02T06:37:35.817Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 7ms | Stack: backend
+[2026-07-02T06:37:35.841Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=10&notification_type=Placement from ::1 | Stack: backend
+[2026-07-02T06:37:35.843Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=10, type=Placement
+[2026-07-02T06:37:37.854Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:37.858Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=10&notification_type=Placement | Status: 200 | Duration: 2017ms | Stack: backend
+[2026-07-02T06:37:41.095Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:41.096Z] [INFO] [frontend.frontend.page] - Filter changed to Result | Stack: N/A
+[2026-07-02T06:37:41.099Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:37:41.142Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:41.144Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=10, type=Result | Stack: N/A
+[2026-07-02T06:37:41.146Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:37:41.162Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=10&notification_type=Result from ::1 | Stack: backend
+[2026-07-02T06:37:41.163Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=10, type=Result
+[2026-07-02T06:37:43.174Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:43.179Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=10&notification_type=Result | Status: 200 | Duration: 2017ms | Stack: backend
+[2026-07-02T06:37:44.345Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:44.346Z] [INFO] [frontend.frontend.page] - Filter changed to Event | Stack: N/A
+[2026-07-02T06:37:44.348Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 3ms | Stack: backend
+[2026-07-02T06:37:44.395Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:44.397Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=10, type=Event | Stack: N/A
+[2026-07-02T06:37:44.399Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:37:44.419Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=10&notification_type=Event from ::1 | Stack: backend
+[2026-07-02T06:37:44.420Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=10, type=Event
+[2026-07-02T06:37:46.447Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=10&notification_type=Event | Status: 200 | Duration: 2028ms | Stack: backend
+[2026-07-02T06:37:46.442Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:49.261Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:49.264Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 3ms | Stack: backend
+[2026-07-02T06:37:49.262Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=20, type=Event | Stack: N/A
+[2026-07-02T06:37:49.278Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=20&notification_type=Event from ::1 | Stack: backend
+[2026-07-02T06:37:49.279Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=20, type=Event
+[2026-07-02T06:37:51.295Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=20&notification_type=Event | Status: 200 | Duration: 2017ms | Stack: backend
+[2026-07-02T06:37:51.290Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:37:55.522Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:55.523Z] [INFO] [frontend.frontend.page] - Marked page as read | Stack: N/A
+[2026-07-02T06:37:55.526Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:37:59.269Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:37:59.272Z] [INFO] [frontend.frontend.page] - Page changed to 1 | Stack: N/A
+[2026-07-02T06:37:59.276Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 7ms | Stack: backend
+[2026-07-02T06:38:00.845Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:00.849Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:38:00.846Z] [INFO] [frontend.frontend.page] - Filter changed to All | Stack: N/A
+[2026-07-02T06:38:00.917Z] [INFO] [frontend.frontend.api] - Fetching notifications: page=1, limit=20, type=All | Stack: N/A
+[2026-07-02T06:38:00.915Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:00.919Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 4ms | Stack: backend
+[2026-07-02T06:38:00.938Z] [INFO] [middleware] - Incoming Request: GET /api/notifications?page=1&limit=20 from ::1 | Stack: backend
+[2026-07-02T06:38:00.941Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=20, type=undefined
+[2026-07-02T06:38:02.961Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:13:18)
+[2026-07-02T06:38:02.965Z] [INFO] [middleware] - Response: GET /api/notifications?page=1&limit=20 | Status: 200 | Duration: 2027ms | Stack: backend
+[2026-07-02T06:38:07.568Z] [INFO] [frontend.frontend.api] - Fetching priority notifications: limit=10 | Stack: N/A
+[2026-07-02T06:38:07.565Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:07.572Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 7ms | Stack: backend
+[2026-07-02T06:38:07.583Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=100, type=undefined
+[2026-07-02T06:38:07.579Z] [INFO] [middleware] - Incoming Request: GET /api/notifications/priority?limit=10 from ::1 | Stack: backend
+[2026-07-02T06:38:07.600Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:07.606Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 6ms | Stack: backend
+[2026-07-02T06:38:07.603Z] [INFO] [frontend.frontend.api] - Fetching priority notifications: limit=10 | Stack: N/A
+[2026-07-02T06:38:09.605Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getPriorityNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:24:18)
+[2026-07-02T06:38:09.614Z] [INFO] [middleware] - Response: GET /api/notifications/priority?limit=10 | Status: 200 | Duration: 2035ms | Stack: backend
+[2026-07-02T06:38:09.626Z] [INFO] [middleware] - Incoming Request: GET /api/notifications/priority?limit=10 from ::1 | Stack: backend
+[2026-07-02T06:38:09.629Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=100, type=undefined
+[2026-07-02T06:38:09.906Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:09.907Z] [INFO] [frontend.frontend.api] - Fetching priority notifications: limit=15 | Stack: N/A
+[2026-07-02T06:38:09.909Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 3ms | Stack: backend
+[2026-07-02T06:38:09.918Z] [INFO] [middleware] - Incoming Request: GET /api/notifications/priority?limit=15 from ::1 | Stack: backend
+[2026-07-02T06:38:09.920Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=100, type=undefined
+[2026-07-02T06:38:11.664Z] [INFO] [middleware] - Response: GET /api/notifications/priority?limit=10 | Status: 304 | Duration: 2038ms | Stack: backend
+[2026-07-02T06:38:11.658Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getPriorityNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:24:18)
+[2026-07-02T06:38:11.937Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getPriorityNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:24:18)
+[2026-07-02T06:38:11.942Z] [INFO] [middleware] - Response: GET /api/notifications/priority?limit=15 | Status: 200 | Duration: 2024ms | Stack: backend
+[2026-07-02T06:38:12.346Z] [INFO] [middleware] - Incoming Request: POST /api/logs from ::1 | Stack: backend
+[2026-07-02T06:38:12.348Z] [INFO] [frontend.frontend.api] - Fetching priority notifications: limit=5 | Stack: N/A
+[2026-07-02T06:38:12.349Z] [INFO] [middleware] - Response: POST /api/logs | Status: 201 | Duration: 3ms | Stack: backend
+[2026-07-02T06:38:12.360Z] [INFO] [middleware] - Incoming Request: GET /api/notifications/priority?limit=5 from ::1 | Stack: backend
+[2026-07-02T06:38:12.363Z] [INFO] [backend.apiService] - Fetching from external URL: http://4.224.186 with parameters page=1, limit=100, type=undefined
+[2026-07-02T06:38:14.384Z] [WARNING] [backend.apiService] - External API failed or is unreachable (timeout of 2000ms exceeded). Falling back to local data source. | Stack: AxiosError: timeout of 2000ms exceeded
+    at createTimeoutError (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:3612:14)
+    at RedirectableRequest.handleTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:4140:15)
+    at RedirectableRequest.emit (node:events:518:28)
+    at Timeout._onTimeout (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\follow-redirects\index.js:233:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+    at Axios.request (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\node_modules\axios\dist\node\axios.cjs:5517:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchExternalNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\service\apiService.js:53:22)
+    at async getPriorityNotifications (C:\Users\sneka\OneDrive\Desktop\2312050\Campus-Evaluation-FS\notification-app-be\controller\notificationController.js:24:18)
+[2026-07-02T06:38:14.390Z] [INFO] [middleware] - Response: GET /api/notifications/priority?limit=5 | Status: 200 | Duration: 2030ms | Stack: backend
