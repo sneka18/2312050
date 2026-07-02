@@ -263,3 +263,10 @@ def process_queue_job(job):
 ## Sorting Weight & Recency
 *   **Weights:** `Placement` (3) > `Result` (2) > `Event` (1).
 *   **Sorting Rule:** Sort by Type Weight descending, then by Timestamp descending (most recent first). This ensures high-weight placements show first, with chronological sorting among equal weights.
+
+## Efficiently Maintaining the Top 10
+When new notifications arrive continuously, sorting the entire array every time is inefficient ($O(N \log N)$). 
+To maintain the top 10 efficiently:
+1.  **Min-Heap (Priority Queue):** We maintain a Min-Heap of size $k = 10$. The heap is ordered by our Priority Rule (lowest priority at the root).
+2.  **Insertion ($O(\log k)$):** When a new notification arrives, we compare it to the root of the Min-Heap. If its priority is higher than the root, we pop the root and push the new notification. 
+3.  **Result:** This ensures we always have the top 10 priorities in memory in $O(N \log k)$ time for initial loads and strictly $O(\log k)$ time per new notification, making it highly scalable for real-time streams.

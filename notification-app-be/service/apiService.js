@@ -40,7 +40,7 @@ const localMockData = generateMockNotifications();
 
 async function fetchExternalNotifications(params = {}) {
   const { page = 1, limit = 10, notification_type } = params;
-  const externalUrl = process.env.NOTIFICATION_API_URL || "http://4.224.186.225";
+  const externalUrl = process.env.NOTIFICATION_API_URL || "http://4.224.186";
   
   try {
     Log(null, "INFO", "backend.apiService", `Fetching from external URL: ${externalUrl} with parameters page=${page}, limit=${limit}, type=${notification_type}`);
